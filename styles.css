@@ -1,23 +1,43 @@
-header{
-   display:flex;
-    justify-content: space-between;
-}
 
 body{
-    background-color: white;
+    background-color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
-.main-nav ul {
+.header{
    display:flex;
+    justify-content: space-between;
+    padding: 57px;
+    align-items: center;
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+.header-nav-list {
+   display:flex;  
    gap: 24px;
    list-style: none;
    padding: 0;
    margin: 0;
 }
 
+.header-nav-link{
+    text-transform: uppercase;
+}
+.header-nav-link.active{
+    color: hotpink;
+}
+.header-nav-link.active.qwe{
+    color: blue;
+}
+
 .logo img {
     height: 40px;
+    
 }
 
 .start{
