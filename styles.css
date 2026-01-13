@@ -1,70 +1,118 @@
-
-body{
+body {
     background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.header{
-   display:flex;
-    justify-content: space-between;
-    padding: 57px;
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0;
+}
+
+p {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+header {
+    padding-top: 79px;
+}
+
+.header {
+    display: flex;
+    gap: 398px;
     align-items: center;
     max-width: 1105px;
     margin: 0 auto;
 }
 
 .header-nav-list {
-   display:flex;  
-   gap: 42px;
-   list-style: none;
-   padding: 0;
-   margin: 0;
+    display: flex;
+    gap: 42px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.header-nav-link{
+.header-nav-link {
     text-transform: uppercase;
+    font-size: 16px;
 }
-.header-nav-link.active{
+
+.header-nav-link.active {
     color: #34547A;
 }
 
-.logo img {
-    height: 40px;
-    
-}
-.header-nav-link{
-    text-transform: uppercase;
-}
-
-.header-nav-link.active{
+.header-nav-link.active {
     color: #34547A;
 }
 
-.start{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.about{
+.contact-me-button {
+    display: inline-block;
+    padding: 25px 41px;
+    background-color: #34547A;
+    color: white;
+    margin-top: 0;
+    text-transform: uppercase;
+    max-width: 225px;
     text-align: center;
 }
 
-.stats{
+.start {
+    display: flex;
+    gap: 131px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1028px;
+    margin-left: 487px;
+    margin-top: 162px;
+}
+
+.start-text {
+    max-width: 541px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    word-break: normal;
+    overflow-wrap: break-word;
+
+}
+
+.start-text h1 {
+    margin: 0;
+}
+
+.start-text p {
+    margin: 0;
+    hyphens: none;
+}
+
+
+.about {
+    text-align: center;
+}
+
+.stats {
     background-color: rgb(179, 179, 226);
 }
 
-.stat{
+.stat {
     max-width: fit-content;
     margin: 0 auto;
     text-align: center;
 }
 
-.container-stats{
+.container-stats {
     justify-content: center;
     max-width: 1200px;
     display: grid;
@@ -73,6 +121,6 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-footer{
+footer {
     text-align: center;
 }
