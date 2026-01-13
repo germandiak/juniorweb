@@ -1,16 +1,6 @@
-header{
-   display:flex;
-    justify-content: space-between;
-}
 
 body{
-    background-color: white;
-}
-
-
-.main-nav ul {
-   display:flex;
-   gap: 24px;
+    background-color: #fff;
 }
 
 a{
@@ -24,7 +14,7 @@ a{
     padding: 57px;
     align-items: center;
     max-width: 1105px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .header-nav-list {
@@ -35,8 +25,16 @@ a{
    margin: 0;
 }
 
+.header-nav-link{
+    text-transform: uppercase;
+}
+.header-nav-link.active{
+    color: #34547A;
+}
+
 .logo img {
     height: 40px;
+    
 }
 .header-nav-link{
     text-transform: uppercase;
