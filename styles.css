@@ -19,7 +19,7 @@ a{
 
 .header-nav-list {
    display:flex;  
-   gap: 24px;
+   gap: 42px;
    list-style: none;
    padding: 0;
    margin: 0;
@@ -29,10 +29,7 @@ a{
     text-transform: uppercase;
 }
 .header-nav-link.active{
-    color: hotpink;
-}
-.header-nav-link.active.qwe{
-    color: blue;
+    color: #34547A;
 }
 
 .logo img {
