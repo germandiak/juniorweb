@@ -15,25 +15,14 @@ h1 {
     margin: 0;
 }
 
-p {
-    color: #727272;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
-    word-break: normal;
-    overflow-wrap: break-word;
-}
-
-header {
-    padding-top: 79px;
-}
 
 .header {
     display: flex;
-    gap: 398px;
+    justify-content: space-between;
     align-items: center;
     max-width: 1105px;
     margin: 0 auto;
+    padding-top: 79px
 }
 
 .header-nav-list {
@@ -53,32 +42,25 @@ header {
     color: #34547A;
 }
 
-.header-nav-link.active {
-    color: #34547A;
-}
-
 .contact-me-button {
-    display: inline-block;
     padding: 25px 41px;
     background-color: #34547A;
     color: white;
-    margin-top: 0;
     text-transform: uppercase;
-    max-width: 225px;
+    width: 143px;
     text-align: center;
 }
 
-.start {
+.section-start {
     display: flex;
-    gap: 131px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1028px;
-    margin-left: 487px;
+    margin: 0 auto;
     margin-top: 162px;
 }
 
-.start-text {
+.section-start-text {
     max-width: 541px;
     display: flex;
     flex-direction: column;
@@ -88,15 +70,22 @@ header {
 
 }
 
-.start-text h1 {
+.section-start-text h1 {
     margin: 0;
 }
 
-.start-text p {
+.section-start-text p {
     margin: 0;
     hyphens: none;
 }
 
+.section-start-main-text {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    word-break: normal;
+}
 
 .about {
     text-align: center;
