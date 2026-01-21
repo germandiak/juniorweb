@@ -1,0 +1,65 @@
+@mixin h-style(
+    $font-size: 32px, $font-weight: 500, $font-color: #000000) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $font-color;
+}
+
+@mixin text-style {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+@mixin button-style($btn-bg-color)  {
+    padding: 25px 41px;
+    background: $btn-bg-color;
+    color: white;
+    text-transform: uppercase;
+    width: 143px;
+    text-align: center;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin container-style {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    word-break: normal;
+    overflow-wrap: break-word;
+    max-width: 540px;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+@mixin container-inner-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1028px;
+    margin: 0 auto;
+    padding-top: 162px;
+    padding-bottom: 146px;
+    gap: 150px;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin grid($columns, $gap: 0) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+@mixin title($size, $weight: 500) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+

@@ -1,0 +1,241 @@
+@use "variables";
+@use "mixins";
+
+body {
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1105px;
+    margin: 0 auto;
+    padding-top: 79px
+}
+
+
+.header {
+    background-color: variables.$bg-color;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-link {
+    text-transform: uppercase;
+    font-size: variables.$main-text-size;
+}
+
+.header-nav-link.active {
+    color: variables.$primary-color;
+}
+
+.contact-me-button {
+    @include mixins.button-style(variables.$primary-color);
+}
+
+.container-start {
+   @include mixins.container-inner-style;
+}
+
+.section-start {
+    background-color: variables.$bg-color;
+}
+
+.section-start-text {
+    max-width: 541px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    word-break: normal;
+    overflow-wrap: break-word;
+
+}
+
+.section-start-text h1 {
+    margin: 0;
+}
+
+.section-start-text p {
+    margin: 0;
+    hyphens: none;
+}
+
+.section-start-main-text {
+    @include mixins.text-style;
+    margin: 0;
+    word-break: normal;
+}
+
+.about {
+    @include mixins.container-style;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.about-me-header {
+    @include mixins.h-style;
+}
+
+.about-me-text {
+    @include mixins.text-style;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.section-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: variables.$primary-color;
+
+}
+
+.list-stats {
+    display: flex;
+    gap: 80px;
+}
+
+.stat {
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-container {
+    justify-items: center;
+    max-width: 1091px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    // gap: 49px;
+}
+
+.stats {
+  background: variables.$primary-color;
+  padding: 100px 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+  }
+
+  &__value {
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  &__label {
+    font-size: 16px;
+  }
+}
+
+.skills-photo {
+    max-width: 555px;
+    flex-shrink: 0;
+}
+
+.skills-photo img {
+width: 100%;
+height: auto;
+display: block
+}
+
+.skills-section {
+   @include mixins.flex-center;
+//    max-width: 
+}
+
+.skills-container {
+    @include mixins.container-inner-style;
+}
+
+.skills-header {
+    @include mixins.h-style;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    @include mixins.text-style;
+    width: 445px;
+}
+
+.skills-bar {
+  display: flex;
+  align-items: center;
+  width: 445px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.skills-bar-rest {
+    width: 20%;
+  height: 100%;
+  flex-shrink: 0
+}
+
+.skills-bar-fill {
+width: 80%;
+height: 100%;
+flex-shrink: 0;
+}
+
+
+.skills-bar img {
+  display: block; 
+  width: 100%;
+  height: 100%;
+
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+
+footer {
+    text-align: center;
+}
+
