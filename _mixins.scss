@@ -23,7 +23,7 @@
     }
 }
 
-@mixin container-style {
+@mixin container-inner-style {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -32,10 +32,11 @@
     max-width: 540px;
     text-align: center;
     padding-top: 100px;
+        padding-bottom: 100px;
     margin: 0 auto;
 }
 
-@mixin container-inner-style {
+@mixin container-style {
     display: flex;
     justify-content: space-between;
     align-items: center;
