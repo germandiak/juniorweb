@@ -1,5 +1,4 @@
-@mixin h-style(
-    $font-size: 32px, $font-weight: 500, $font-color: #000000) {
+@mixin h-style($font-size: 32px, $font-weight: 500, $font-color: #000000) {
     font-size: $font-size;
     font-weight: $font-weight;
     color: $font-color;
@@ -12,56 +11,54 @@
     margin: 0;
 }
 
-@mixin button-style($btn-bg-color)  {
+@mixin button-style($btn-bg-color) {
     padding: 25px 41px;
     background: $btn-bg-color;
     color: white;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
+
     &:hover {
         opacity: 0.8;
     }
 }
 
-@mixin container-inner-style {
+@mixin container-inner-style ($align: center, $gap: 50px) {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: $gap;
     word-break: normal;
     overflow-wrap: break-word;
     max-width: 540px;
-    text-align: center;
+    text-align: $align;
     padding-top: 100px;
-        padding-bottom: 100px;
+    padding-bottom: 100px;
     margin: 0 auto;
 }
 
-@mixin container-style {
+@mixin container-style($padding-top: 162px, $padding-bottom: 146px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-    padding-top: 162px;
-    padding-bottom: 146px;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
     gap: 120px;
 }
 
 @mixin flex-center {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 @mixin grid($columns, $gap: 0) {
-  display: grid;
-  grid-template-columns: $columns;
-  gap: $gap;
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
 }
 
 @mixin title($size, $weight: 500) {
-  font-size: $size;
-  font-weight: $weight;
+    font-size: $size;
+    font-weight: $weight;
 }
-
-

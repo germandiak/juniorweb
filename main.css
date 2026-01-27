@@ -20,20 +20,22 @@ h2 {
   font-size: 21px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1105px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding-top: 79px;
+  padding-top: 57px;
+  padding-bottom: 40px;
+  gap: 120px;
 }
 
 .header {
   background-color: #EEEFF1;
 }
 
-.header-nav-list {
+.header__menu-list {
   display: flex;
   gap: 42px;
   list-style: none;
@@ -41,68 +43,60 @@ h2 {
   margin: 0;
 }
 
-.header-nav-link {
+.header__menu-link {
   text-transform: uppercase;
   font-size: 16px;
 }
 
-.header-nav-link.active {
+.header__menu-link.active {
   color: #34547A;
 }
 
-.contact-me-button {
-  padding: 25px 41px;
-  background: #34547A;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  margin-left: 0;
-}
-.contact-me-button:hover {
-  opacity: 0.8;
+.hero {
+  background-color: #EEEFF1;
 }
 
-.container-start {
+.hero__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  padding-top: 162px;
+  padding-top: 60px;
   padding-bottom: 146px;
   gap: 120px;
 }
 
-.section-start {
-  background-color: #EEEFF1;
-}
-
-.section-start-text {
-  max-width: 541px;
+.hero__content {
   display: flex;
   flex-direction: column;
   gap: 60px;
   word-break: normal;
   overflow-wrap: break-word;
+  max-width: 540px;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
 }
 
-.section-start-text h1 {
-  margin: 0;
-}
-
-.section-start-text p {
-  margin: 0;
-  hyphens: none;
-}
-
-.section-start-main-text {
+.hero__text {
   font-size: 16px;
   font-weight: 400;
   color: #727272;
   margin: 0;
-  margin: 0;
-  word-break: normal;
+}
+
+.hero__button {
+  padding: 25px 41px;
+  background: #34547A;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: start;
+}
+.hero__button:hover {
+  opacity: 0.8;
 }
 
 .about {
@@ -438,7 +432,6 @@ h2 {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
 }
 .contact-button:hover {
   opacity: 0.8;
