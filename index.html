@@ -1,61 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мое портфолио</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/WD.png" alt="Логотип">
-        </div>
-        <nav class="main-nav">
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Об авторе</a></li>
-            <li><a href="#">Работы</a></li>
-            <li><a href="#">Процесс</a></li>
-            <li><a href="#">Контакты</a></li>               
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="img/WD.png" alt="Фото компьютера">
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a class="header__menu-link active" href="#">Главная</a></li>
+          <li><a class="header__menu-link" href="#">Об авторе</a></li>
+          <li><a class="header__menu-link" href="#">Работы</a></li>
+          <li><a class="header__menu-link" href="#">Процесс</a></li>
+          <li><a class="header__menu-link" href="#">Контакты</a></li>
         </ul>
-        </nav>
-    </header>
-<main>
-    <section class="start">
-        <div>
-        <img src="img/Frame (1).png" alt="Мое фото">
-        </div>  
-        <div>
-            <h1>Привет, меня зовут Герман</h1>
-            <p>Я стоматолог и разработчик</p>
-            <a href="#">Связаться со мной</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__image">
+          <img src="img/Frame (1).png" alt="Фото компьютера">
         </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Дизайн и верстка</h1>
+          <p class="hero__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+          </p>
+          <a href="#" class="hero__button">Написать мне</a>
+        </div>
+      </div>
     </section>
     <section class="about">
-        <h2>Обо мне</h2>
-        <div>
-            <p>Я стоматолог с опытом работы 8 лет. Я хочу поменять профессию и стать IT-специалистом, потому что хочу удаленную работу и развивающуюся сферу</p>
-        </div>
+      <div class="about-me-header">Обо мне</div>
+      <div class="about-me-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
     </section>
     <section class="stats">
-        <div class="container-stats">
-        <div class="stat">
-            <h3>8+</h3>
-            <p>Лет в стоматологии</p>
-        </div>
-        <div class="stat">
-            <h3>5</h3>
-            <p>Завершенных курсов</p>
-        </div>
-        <div class="stat">
-            <h3>3</h3>
-            <p>Проекта в портфолио</p>
-        </div>
-    </div>
+      <div class="stat-container">
+        <ul class="stats__list">
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+          <li class="stats__item">
+            <img src="img/Group (1).png" alt="">
+            <div>
+              <span class="stats__value">40+</span>
+              <span class="stats__label">проектов</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </section>
-</main>
-<footer>
-    <p>© 2026 Герман Дьяк</p>
-</footer>
+
+    <section class="skills">
+      <div class="skills-container">
+
+        <div class="skills-text">
+          <h2 class="skills-header">Мои навыки</h2>
+
+          <ul class="skills-list">
+            <li class="skills-item">
+              <span class="skills-name">Adobe Photoshop</span>
+              <div class="skills-bar">
+                <div class="skills-bar-fill">
+                  <img src="img/skills-bar-blue.png" alt="level">
+                </div>
+                <div class="skills-bar-rest">
+                  <img src="img/skills-bar-grey.png" alt="level2">
+                </div>
+            </li>
+            <li class="skills-item">
+              <span class="skills-name">Adobe Photoshop</span>
+
+              <div class="skills-bar">
+                <div class="skills-bar-fill">
+                  <img src="img/skills-bar-blue.png" alt="level">
+                </div>
+                <div class="skills-bar-rest">
+                  <img src="img/skills-bar-grey.png" alt="level2">
+                </div>
+            </li>
+            <li class="skills-item">
+              <span class="skills-name">Adobe Photoshop</span>
+              <div class="skills-bar">
+                <div class="skills-bar-fill">
+                  <img src="img/skills-bar-blue.png" alt="level">
+                </div>
+                <div class="skills-bar-rest">
+                  <img src="img/skills-bar-grey.png" alt="level2">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-photo">
+          <img src="img/Rectangle 3.png" alt="my photo">
+        </div>
+    </section>
+    <section class="howiwork-section">
+      <div class="howiwork-container">
+        <div class="howiwork-text">
+          <h2 class="howiwork-header">Как я работаю</h2>
+          <p class="howiwork-maintext">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+            Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </div>
+        <div class="howiwork-media">
+          <div class="video-preview">
+            <img class="video-preview-img" src="img/video-preview.png" alt="Video preview">
+            <img class="play-button" src="img/play-button.png" alt="play-button">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-projects">
+      <div class="container-projects">
+        <div class="photos-projects">
+          <img src="img/lists-projects.png" alt="">
+          <div class="project-item">
+            <img src="img/macbooks-blue-projects.png" alt="">
+            <div class="eye-overlay">
+              <img src="img/eye-projects.png" alt="eye">
+            </div>
+          </div>
+          <img src="img/lists-projects.png" alt="">
+          <img src="img/macbooks-projects.png" alt="">
+          <img src="img/macbooks-projects.png" alt="">
+          <img src="img/lists-projects.png" alt="">
+          <img src="img/macbooks-projects.png" alt="">
+          <img src="img/lists-projects.png" alt="">
+        </div>
+
+        <ul class="logos-projects">
+          <li class="logo1"><img src="img/microsoft-projects.png"></li>
+          <li class="logo2"><img src="img/microsoft-projects.png"></li>
+          <li class="logo3"><img src="img/microsoft-projects.png"></li>
+          <li class="logo4"><img src="img/microsoft-projects.png"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2 class="contact-text-header">Хотите веб-сайт?</h2>
+          <p class="contact-text-main">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+            Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </div>
+        <form class="contact-form">
+
+          <div class="contact-row">
+            <input class="contact-input" type="text" placeholder="Ваше имя">
+            <input class="contact-input" type="email" placeholder="Ваш e-mail">
+          </div>
+
+          <textarea class="contact-textarea" placeholder="Сообщение"></textarea>
+
+        </form>
+
+        <button class="contact-button" type="submit">
+          ОТПРАВИТЬ
+        </button>
+
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="footer-text">
+          <h2 class="footer-text-header">Иванов Иван</h2>
+          <p class="footer-text-main">(с) 2018. Все права защищены.</p>
+        </div>
+        <ul class="footer-logos">
+          <li class="logovk1"><img src="img/vk-social-network-logo.png"></li>
+          <li class="logovk2"><img src="img/vk-social-network-logo.png"></li>
+          <li class="logovk3"><img src="img/vk-social-network-logo.png"></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </section>
+  </footer>
 </body>
